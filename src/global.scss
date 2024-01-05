@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Aeonik";
+  src: local("Aeonik"), url("./fonts/AeonikBold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: local("Aeonik"), url("./fonts/AeonikRegular.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: local("Aeonik"), url("./fonts/AeonikLight.otf");
+  font-weight: 300;
+}
+
+a:-webkit-any-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Aeonik", sans-serif;
+  font-weight: normal;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

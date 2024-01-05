@@ -1,0 +1,138 @@
+:root {
+  --black: #000;
+}
+
+.contain {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  color: black;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 0;
+    .reveal {
+      display: flex;
+      font-size: 3.5rem;
+      max-width: 50rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        font-size: 2.25em;
+        text-decoration: none;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+.loadings {
+  background-color: var(--black);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  color: white;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  .loader {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    width: 250px;
+    height: 35px;
+    display: flex;
+    .bar {
+      height: 35px;
+      overflow: hidden;
+    }
+    .loader1 {
+      position: relative;
+      background-color: rgb(255, 255, 255);
+      width: 170px;
+    }
+    .loader2 {
+      position: relative;
+      background-color: rgb(255, 255, 255);
+      width: 80px;
+    }
+  }
+}
+
+.counter {
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+  color: white;
+  display: flex;
+  height: 130px;
+  border: none;
+  overflow: hidden;
+  align-items: end;
+  .counter1,
+  .counter2,
+  .counter3 {
+    position: relative;
+  }
+  .digit {
+    display: flex;
+    flex-direction: column;
+    max-height: 130px;
+    position: relative;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: space-between;
+    .number {
+      font-size: 8em;
+      -webkit-text-stroke: 3px white;
+      max-height: 130px;
+    }
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  &_active {
+    font-weight: 700;
+    background-color: #2b2e3a;
+    color: white;
+  }
+}
